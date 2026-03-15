@@ -2,7 +2,7 @@
 include("classes/Produto.php");
 include("classes/Json.php");
 
-$arquivo = "prodsalvos.json";
+$arquivo = "dados/produtos.json";
 $produtos = [];
 
 if(file_exists($arquivo)){
