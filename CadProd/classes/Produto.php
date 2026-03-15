@@ -1,32 +1,32 @@
 <?php
 
 class Produto {
-    private $id;
+    private $codProd;
     private $nome;
-    private $preco;
-    private $quantidade;
+    private $unid;
+    private $saldoEstoque;
 
-    public function __construct($id, $nome, $preco, $quantidade) {
-        $this->id = $id;
+    public function __construct($codProd, $nome, $unid, $saldoEstoque) {
+        $this->codProd = $codProd;
         $this->nome = $nome;
-        $this->preco = $preco;
-        $this->quantidade = $quantidade;
+        $this->unid = $unid;
+        $this->saldoEstoque = $saldoEstoque;
     }
 
-    public function getId() {
-        return $this->id;
+    public function getCodProd() {
+        return $this->codProd;
     }
 
     public function getNome() {
         return $this->nome;
     }
 
-    public function getPreco() {
-        return $this->preco;
+    public function getUnid() {
+        return $this->unid;
     }
 
-    public function getQuantidade() {
-        return $this->quantidade;
+    public function getSaldoEstoque() {
+        return $this->saldoEstoque;
     }
 }
 
